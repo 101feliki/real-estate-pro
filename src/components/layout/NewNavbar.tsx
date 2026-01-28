@@ -33,7 +33,7 @@ const NewNavbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Listings', path: '/listings' },
-   
+    
     { name: 'Contact', path: '/contact' },
   ];
 

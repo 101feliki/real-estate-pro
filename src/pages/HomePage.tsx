@@ -361,16 +361,7 @@ const HomePage = () => {
       </section>
 
       {/* FLOATING VERIFICATION BUTTON */}
-      <div className="fixed bottom-6 right-6 z-50 animate-bounce-slow">
-        <a
-          href="/verify-now"
-          className="flex items-center gap-3 px-5 py-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 group"
-        >
-          <ShieldCheck className="w-5 h-5" />
-          <span className="hidden sm:inline">Verify Land Now</span>
-          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-        </a>
-      </div>
+      
 
       {/* FOOTER */}
       <footer className="bg-gray-900 text-white pt-20 pb-10 border-t border-gray-800">

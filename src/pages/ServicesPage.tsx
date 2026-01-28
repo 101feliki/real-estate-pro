@@ -42,7 +42,7 @@ const ServicesPage = () => {
       title: 'Land Verification & Acquisition',
       description: 'Scam-proof land purchase with comprehensive title search, boundary identification, and seller verification.',
       features: ['Title Deed Verification', 'Physical Site Inspection', 'Fraud Prevention Checks', 'Boundary Survey'],
-      price: 'From KES 50,000',
+      
       color: 'from-blue-500 to-blue-600',
       highlight: true,
       badge: 'Diaspora Special'
@@ -52,7 +52,7 @@ const ServicesPage = () => {
       title: 'Legal Due Diligence',
       description: 'Full legal processing including land rates clearance, transfer documentation, and compliance checks.',
       features: ['Land Board Clearance', 'Stamp Duty Processing', 'Registration Services', 'Legal Documentation'],
-      price: 'From KES 75,000',
+     
       color: 'from-blue-600 to-blue-700'
     },
     {
@@ -68,7 +68,7 @@ const ServicesPage = () => {
       title: 'Diaspora Coordination',
       description: 'Dedicated account management with real-time updates for overseas clients.',
       features: ['Weekly Video Updates', 'Digital Document Portal', '24/7 Support', 'Site Visit Coordination'],
-      price: 'Monthly Management',
+      
       color: 'from-blue-800 to-blue-900'
     },
     {
@@ -76,7 +76,7 @@ const ServicesPage = () => {
       title: 'Property Buying',
       description: 'Expert guidance for purchasing residential and commercial properties in Kenya.',
       features: ['Market Analysis', 'Property Viewing', 'Price Negotiation', 'Closing Assistance'],
-      price: 'From KES 100,000',
+     
       color: 'from-green-500 to-green-600'
     },
     {
@@ -84,7 +84,7 @@ const ServicesPage = () => {
       title: 'Title Transfer & Security',
       description: 'Secure title deed transfer and registration with full legal protection.',
       features: ['Title Search', 'Transfer Processing', 'Registration', 'Security Verification'],
-      price: 'From KES 60,000',
+      
       color: 'from-purple-500 to-purple-600'
     }
   ];
@@ -254,16 +254,7 @@ const ServicesPage = () => {
                   ))}
                 </ul>
                 
-                <div className="flex items-center justify-between pt-6 border-t border-gray-100">
-                  <div className="text-lg font-bold text-blue-600">{service.price}</div>
-                  <a 
-                    href={`/services/${service.title.toLowerCase().replace(/ /g, '-')}`}
-                    className="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition-colors group/link"
-                  >
-                    Service Details 
-                    <ChevronRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" />
-                  </a>
-                </div>
+                
               </div>
             ))}
           </div>

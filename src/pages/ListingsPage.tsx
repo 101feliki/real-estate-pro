@@ -184,7 +184,9 @@ const ListingsPage = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Discover Verified
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-green-300 to-orange-300">
+                Discover Verified
+              </span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-green-300 to-orange-300">
                 Kenyan Land Opportunities
               </span>
