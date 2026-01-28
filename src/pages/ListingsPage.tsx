@@ -599,10 +599,10 @@ const ListingsPage = () => {
             <Globe className="w-10 h-10 text-white" />
           </div>
           
-          <h2 className="text-4xl font-bold mb-6">Investing from Abroad?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Investing from Abroad?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Our diaspora specialists handle everything remotely—from verification to purchase. 
-            Get weekly video updates and complete transparency throughout the process.
+            Get weekly updates and complete transparency throughout the process.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
