@@ -48,5 +48,8 @@ pids
 # Output of 'npm pack'
 *.tgz
 
+vite.svg
+*.svg.bak
+
 # Yarn Integrity file
 .yarn-integrity
