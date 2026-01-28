@@ -416,13 +416,7 @@ const AboutPage = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/land-verification"
-              className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold rounded-xl shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl flex items-center justify-center group"
-            >
-              Start Land Verification
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+            
             <a
               href="/contact"
               className="px-8 py-4 bg-transparent border border-blue-300 text-white hover:bg-blue-800/30 font-bold rounded-xl transition-all flex items-center justify-center group backdrop-blur-sm"

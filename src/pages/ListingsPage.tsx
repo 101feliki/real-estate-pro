@@ -461,16 +461,7 @@ const ListingsPage = () => {
                         View Details
                         <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                       </a>
-                      <a 
-                        href="/diaspora-consultation"
-                        className={`px-4 py-2.5 rounded-xl font-semibold text-sm transition-all ${
-                          land.diasporaSpecial 
-                            ? 'bg-gradient-to-r from-orange-50 to-orange-100 text-orange-700 hover:from-orange-100 hover:to-orange-200 border border-orange-200 hover:border-orange-300'
-                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200'
-                        }`}
-                      >
-                        Diaspora Inquiry
-                      </a>
+                      
                     </div>
                   </div>
                 </div>

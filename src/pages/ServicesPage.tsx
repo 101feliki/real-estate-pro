@@ -405,7 +405,7 @@ const ServicesPage = () => {
                 
                 <div className="space-y-4">
                   <a
-                    href="/diaspora-consultation"
+                    href="/contact"
                     className="block w-full py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg group"
                   >
                     <span className="flex items-center justify-center">
