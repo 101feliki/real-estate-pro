@@ -16,7 +16,7 @@ export default defineConfig({
     sourcemap: false,
     minify: 'terser',
     
-    // CRITICAL: Add this to prevent Vite from including default favicon
+    // CRITICAL: Prevent Vite from including ANY default assets
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html')
@@ -25,8 +25,13 @@ export default defineConfig({
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
         },
-        // Don't hash the favicon file
         assetFileNames: (assetInfo) => {
+          // Prevent vite.svg from being included at all
+          if (assetInfo.name === 'vite.svg') {
+            // Return a dummy path that won't be used
+            return 'assets/ignore-this.svg'
+          }
+          // Keep your favicon as-is without hashing
           if (assetInfo.name === 'bluevision-circle.ico') {
             return 'bluevision-circle.ico'
           }
@@ -36,7 +41,6 @@ export default defineConfig({
     }
   },
   
-  // Prevent Vite from serving default favicon
   server: {
     port: 3000,
   },
