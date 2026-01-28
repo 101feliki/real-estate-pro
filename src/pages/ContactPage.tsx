@@ -580,7 +580,7 @@ const ContactPage = () => {
             <div>
               <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
               <ul className="space-y-4">
-                {['Home', 'About Us', 'Services', 'Listings', 'Agents', 'Contact'].map((item) => (
+                {['Home', 'About Us', 'Services', 'Listings',  'Contact'].map((item) => (
                   <li key={item}>
                     <a href="#" className="text-gray-400 hover:text-white transition-colors">
                       {item}
