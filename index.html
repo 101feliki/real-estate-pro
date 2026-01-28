@@ -2,52 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
-    <!-- PRIMARY: Circular ICO Favicon -->
-    <link rel="icon" href="/bluevision-circle.ico?v=2" />
-    
-    <!-- ALTERNATIVE: Circular PNG versions -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
-    
-    <!-- SVG: Perfect circle for modern browsers -->
-    <link rel="icon" type="image/svg+xml" href="/favicon-circle.svg?v=2">
-    
-    <!-- Apple: Circular touch icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
-    
-    <!-- Android/Chrome PWA -->
-    <link rel="manifest" href="/site.webmanifest?v=2">
-    
-    <!-- Theme color matching your blue -->
-    <meta name="theme-color" content="#1e40af">
+    <!-- ADD VERSION PARAMETER -->
+    <link rel="icon" href="/bluevision-circle.ico?v=4" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    
-    <!-- Updated title -->
     <title>BlueVision Realtors LTD | Kenya Land Specialists</title>
     
-    <!-- SEO Description -->
-    <meta name="description" content="Verified circular logo - Secure land acquisition for Kenyan diaspora with BlueVision's scam-proof verification process">
+    <!-- FORCE NO CACHE HEADERS -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Optional: JavaScript to force circular favicon -->
-    <script>
-      // Force circular favicon on load
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('Loading BlueVision circular favicon...');
-        
-        // Remove any square favicons
-        const icons = document.querySelectorAll('link[rel*="icon"]');
-        icons.forEach(icon => {
-          if (!icon.href.includes('circle') && !icon.href.includes('apple')) {
-            icon.remove();
-          }
-        });
-      });
-    </script>
   </body>
 </html>
