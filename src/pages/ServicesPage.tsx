@@ -6,7 +6,7 @@ import {
   MessageCircle,
   Facebook,
   Twitter, 
-  Music2Icon,
+  Youtube,
   TrendingUp, 
   Shield, 
   BarChart, 
@@ -22,57 +22,69 @@ import {
   Phone,
   Calendar,
   ChevronRight,
-  Star
+  Star,
+  Globe,
+  LandPlot,
+  MapPin,
+  ShieldCheck,
+  FileSearch,
+  Building2,
+  Compass,
+  Home as HomeIcon,
+  Mail,
+  Map
 } from 'lucide-react';
 
 const ServicesPage = () => {
   const services = [
     {
-      icon: <Home className="w-7 h-7" />,
-      title: 'Property Buying',
-      description: 'Comprehensive support from search to closing with expert guidance',
-      features: ['Market Analysis', 'Property Viewing', 'Negotiation', 'Closing Assistance'],
-      price: 'From KES 500,000',
-      color: 'from-blue-500 to-blue-600'
+      icon: <LandPlot className="w-7 h-7" />,
+      title: 'Land Verification & Acquisition',
+      description: 'Scam-proof land purchase with comprehensive title search, boundary identification, and seller verification.',
+      features: ['Title Deed Verification', 'Physical Site Inspection', 'Fraud Prevention Checks', 'Boundary Survey'],
+      price: 'From KES 50,000',
+      color: 'from-blue-500 to-blue-600',
+      highlight: true,
+      badge: 'Diaspora Special'
     },
     {
-      icon: <TrendingUp className="w-7 h-7" />,
-      title: 'Property Selling',
-      description: 'Maximize your property value with expert marketing strategies',
-      features: ['Valuation Services', 'Marketing Strategy', 'Showings', 'Closing Management'],
-      price: 'Competitive Commission',
+      icon: <FileSearch className="w-7 h-7" />,
+      title: 'Legal Due Diligence',
+      description: 'Full legal processing including land rates clearance, transfer documentation, and compliance checks.',
+      features: ['Land Board Clearance', 'Stamp Duty Processing', 'Registration Services', 'Legal Documentation'],
+      price: 'From KES 75,000',
       color: 'from-blue-600 to-blue-700'
     },
     {
-      icon: <Shield className="w-7 h-7" />,
-      title: 'Property Management',
-      description: 'Professional management for rental properties and investments',
-      features: ['Tenant Screening', 'Rent Collection', 'Maintenance', 'Financial Reports'],
-      price: 'Monthly Management',
+      icon: <Building2 className="w-7 h-7" />,
+      title: 'Development Management',
+      description: 'Turnkey construction management with transparent reporting for remote investors.',
+      features: ['Architect Selection', 'Contractor Vetting', 'Progress Monitoring', 'Quality Control'],
+      price: 'Project-Based Fees',
       color: 'from-blue-700 to-blue-800'
     },
     {
-      icon: <BarChart className="w-7 h-7" />,
-      title: 'Investment Consultation',
-      description: 'Strategic advice for real estate investors in Nairobi',
-      features: ['Market Research', 'ROI Analysis', 'Portfolio Strategy', 'Risk Assessment'],
-      price: 'Consultation Packages',
+      icon: <Globe className="w-7 h-7" />,
+      title: 'Diaspora Coordination',
+      description: 'Dedicated account management with real-time updates for overseas clients.',
+      features: ['Weekly Video Updates', 'Digital Document Portal', '24/7 Support', 'Site Visit Coordination'],
+      price: 'Monthly Management',
       color: 'from-blue-800 to-blue-900'
     },
     {
-      icon: <DollarSign className="w-7 h-7" />,
-      title: 'Mortgage Assistance',
-      description: 'Connect with the best lenders and competitive rates',
-      features: ['Pre-approval', 'Rate Comparison', 'Documentation', 'Closing Support'],
-      price: 'Free Service',
+      icon: <HomeIcon className="w-7 h-7" />,
+      title: 'Property Buying',
+      description: 'Expert guidance for purchasing residential and commercial properties in Kenya.',
+      features: ['Market Analysis', 'Property Viewing', 'Price Negotiation', 'Closing Assistance'],
+      price: 'From KES 100,000',
       color: 'from-green-500 to-green-600'
     },
     {
-      icon: <FileText className="w-7 h-7" />,
-      title: 'Legal Support',
-      description: 'Professional legal guidance for property transactions',
-      features: ['Contract Review', 'Title Services', 'Closing Docs', 'Legal Consultation'],
-      price: 'From KES 150,000',
+      icon: <ShieldCheck className="w-7 h-7" />,
+      title: 'Title Transfer & Security',
+      description: 'Secure title deed transfer and registration with full legal protection.',
+      features: ['Title Search', 'Transfer Processing', 'Registration', 'Security Verification'],
+      price: 'From KES 60,000',
       color: 'from-purple-500 to-purple-600'
     }
   ];
@@ -81,49 +93,54 @@ const ServicesPage = () => {
     {
       step: '01',
       title: 'Initial Consultation',
-      description: 'Free consultation to understand your needs and goals',
-      icon: <Search className="w-6 h-6" />
+      description: 'Free video consultation to understand your land investment goals',
+      icon: <Compass className="w-6 h-6" />,
+      color: 'from-blue-500 to-blue-600'
     },
     {
       step: '02',
-      title: 'Strategy Development',
-      description: 'Customized plan tailored to your specific situation',
-      icon: <Target className="w-6 h-6" />
+      title: 'Plot Verification',
+      description: 'Comprehensive title search and physical site verification',
+      icon: <ShieldCheck className="w-6 h-6" />,
+      color: 'from-green-500 to-green-600',
+      highlight: true
     },
     {
       step: '03',
-      title: 'Implementation',
-      description: 'Expert execution of the agreed-upon strategy',
-      icon: <ArrowRight className="w-6 h-6" />
+      title: 'Acquisition Process',
+      description: 'Legal documentation, payment processing, and transfer initiation',
+      icon: <FileSearch className="w-6 h-6" />,
+      color: 'from-blue-600 to-blue-700'
     },
     {
       step: '04',
-      title: 'Closing & Follow-up',
-      description: 'Smooth closing process and post-transaction support',
-      icon: <CheckCircle className="w-6 h-6" />
+      title: 'Development & Handover',
+      description: 'Construction oversight and final title deed handover',
+      icon: <Building2 className="w-6 h-6" />,
+      color: 'from-orange-500 to-orange-600'
     }
   ];
 
   const benefits = [
     {
-      icon: <Users className="w-6 h-6" />,
-      title: 'Dedicated Team',
-      description: 'A personal agent and support team for every client'
+      icon: <Globe className="w-6 h-6" />,
+      title: 'Diaspora Specialists',
+      description: 'Exclusive focus on serving Kenyans living abroad'
+    },
+    {
+      icon: <ShieldCheck className="w-6 h-6" />,
+      title: 'Scam-Proof Guarantee',
+      description: '100% verified land with fraud prevention protocols'
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: 'Time Efficiency',
-      description: 'Streamlined processes that save you time and effort'
+      title: 'Time Zone Flexibility',
+      description: '24/7 support accommodating all time zones'
     },
     {
-      icon: <DollarSign className="w-6 h-6" />,
-      title: 'Cost-Effective',
-      description: 'Competitive pricing with transparent fee structures'
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: 'Full Protection',
-      description: 'Comprehensive support and legal safeguards throughout'
+      icon: <FileText className="w-6 h-6" />,
+      title: 'Full Transparency',
+      description: 'Digital portal with real-time progress tracking'
     }
   ];
 
@@ -131,70 +148,71 @@ const ServicesPage = () => {
     <div className="min-h-screen bg-gray-50 font-sans">
       <NewNavbar />
 
-      {/* IMMERSIVE HERO SECTION */}
+      {/* HERO SECTION - Land Focused */}
       <section className="relative min-h-[85vh] pt-20 flex items-center justify-center overflow-hidden">
-        {/* Premium Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
-            alt="Modern Real Estate Services"
+            alt="Kenyan land development"
             className="w-full h-full object-cover"
           />
-          {/* Clean Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/95 via-blue-900/85 to-blue-800/90 mix-blend-multiply" />
         </div>
 
-        {/* Hero Content */}
         <div className="container relative z-10 px-4 pt-20">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-semibold mb-8">
-              <Award className="w-4 h-4 mr-2 text-yellow-400 fill-yellow-400" />
-              Premium Real Estate Solutions
+              <ShieldCheck className="w-4 h-4 mr-2 text-green-300" />
+              <span className="mr-2">Verified Land Acquisition Specialists</span>
+              <span className="px-2 py-0.5 bg-orange-500/90 rounded-full text-xs font-bold">DIASPORA FOCUS</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
-              Our
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
-                Premium Services
+              Secure Your Legacy on
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-green-300 to-orange-300">
+                Verified Kenyan Land
               </span>
             </h1>
             
             <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
-              Comprehensive real estate solutions designed to meet your unique needs, 
-              whether you're buying, selling, or investing in Nairobi's property market.
+              Comprehensive land acquisition and development services designed for the Kenyan diaspora.
+              Invest with confidence through our <span className="font-semibold text-green-300">scam-proof verification system</span>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#services"
-                className="px-8 py-4 bg-white text-blue-900 hover:bg-blue-50 font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-base"
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center text-base group"
               >
-                Explore Services <ArrowRight className="ml-2 w-5 h-5" />
+                Explore Land Services <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="/contact"
-                className="px-8 py-4 bg-transparent border-2 border-white/30 hover:bg-white/10 hover:border-white text-white font-bold rounded-xl backdrop-blur-sm transition-all duration-300 text-base"
+                className="px-8 py-4 bg-transparent border-2 border-white/30 hover:border-orange-400 hover:bg-white/10 text-white font-bold rounded-xl backdrop-blur-sm transition-all duration-300 text-base group"
               >
-                Book Free Consultation
+                <span className="flex items-center justify-center">
+                  Free Land Consultation
+                  <Phone className="ml-2 w-4 h-4 group-hover:text-orange-300 transition-colors" />
+                </span>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
+      {/* SERVICES SECTION - Land Focused */}
       <section id="services" className="py-24 bg-white">
         <div className="container px-4 mx-auto max-w-7xl">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
-              <Target className="w-3 h-3 mr-2" />
-              Our Services
+            <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-blue-100 to-green-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-blue-200">
+              <LandPlot className="w-3 h-3 mr-2" />
+              Specialized Land Services
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-              Comprehensive Real Estate Solutions
+              End-to-End Land Solutions
             </h2>
-            <p className="text-gray-600 max-w-xl mx-auto text-lg">
-              Expert services tailored to guide you through every aspect of your property journey
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Comprehensive services designed for secure diaspora land investment in Kenya
             </p>
           </div>
 
@@ -202,25 +220,34 @@ const ServicesPage = () => {
             {services.map((service, index) => (
               <div 
                 key={index} 
-                className="group bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-500"
+                className={`group bg-white rounded-2xl p-8 border ${service.highlight ? 'border-orange-200 shadow-lg' : 'border-gray-100'} shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 relative overflow-hidden`}
               >
-                {/* Gradient Background Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                {/* Service Badge */}
+                {service.badge && (
+                  <div className="absolute -top-2 -right-2 px-3 py-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs font-bold rounded-full rotate-12 shadow-lg">
+                    {service.badge}
+                  </div>
+                )}
                 
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                {/* Gradient Background Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                
+                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300 ${service.highlight ? 'ring-2 ring-orange-200' : ''}`}>
                   <div className="text-white">
                     {service.icon}
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-8 leading-relaxed">{service.description}</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 mb-8 leading-relaxed text-sm">{service.description}</p>
                 
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-700 font-medium">
-                      <div className="p-1 bg-green-100 rounded-lg mr-4">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
+                    <li key={idx} className="flex items-center text-gray-700 font-medium text-sm">
+                      <div className="p-1 bg-green-100 rounded-lg mr-3">
+                        <CheckCircle className="w-3.5 h-3.5 text-green-600" />
                       </div>
                       <span>{feature}</span>
                     </li>
@@ -233,7 +260,7 @@ const ServicesPage = () => {
                     href={`/services/${service.title.toLowerCase().replace(/ /g, '-')}`}
                     className="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition-colors group/link"
                   >
-                    Learn More 
+                    Service Details 
                     <ChevronRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" />
                   </a>
                 </div>
@@ -243,42 +270,56 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* PROCESS SECTION */}
+      {/* PROCESS SECTION - Land Acquisition Focus */}
       <section className="py-24 bg-gradient-to-b from-white to-blue-50">
         <div className="container px-4 mx-auto max-w-7xl">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-blue-50 to-orange-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-blue-200">
+              <Compass className="w-3 h-3 mr-2" />
+              Our Verified Process
+            </div>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our Proven Process
+              The BlueVision Land Journey
             </h2>
             <p className="text-gray-600 max-w-xl mx-auto text-lg">
-              A structured approach that ensures success and satisfaction at every step
+              A structured, transparent process that ensures secure land acquisition from anywhere in the world
             </p>
           </div>
 
           <div className="relative">
-            {/* Process Line */}
-            <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-blue-300 to-blue-200 -translate-y-1/2"></div>
+            {/* Process Line with gradient */}
+            <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-200 via-green-200 to-orange-200 -translate-y-1/2"></div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="relative">
-                  <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group text-center h-full">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className={`bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group text-center h-full ${step.highlight ? 'ring-1 ring-orange-200' : ''}`}>
+                    <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                       <div className="text-white">
                         {step.icon}
                       </div>
                     </div>
                     
-                    <div className="text-4xl font-bold text-blue-900 mb-4 opacity-20">{step.step}</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">{step.title}</h3>
-                    <p className="text-gray-600">{step.description}</p>
+                    <div className="text-4xl font-bold text-gray-200 mb-2 group-hover:text-gray-300 transition-colors">{step.step}</div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">{step.description}</p>
+                    
+                    {/* Orange accent for highlighted step */}
+                    {step.highlight && (
+                      <div className="mt-4 inline-flex items-center px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-semibold">
+                        <ShieldCheck className="w-3 h-3 mr-1" />
+                        Scam-Proof Verification
+                      </div>
+                    )}
                   </div>
                   
-                  {/* Connector Arrows */}
+                  {/* Connector Arrows with orange for last */}
                   {index < processSteps.length - 1 && (
                     <>
                       <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
-                        <ArrowRight className="w-8 h-8 text-blue-300" />
+                        <ArrowRight className="w-8 h-8 text-blue-300 group-hover:text-orange-400 transition-colors" />
                       </div>
                       <div className="lg:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
                         <ArrowRight className="w-8 h-8 text-blue-300 rotate-90" />
@@ -292,36 +333,38 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* BENEFITS SECTION */}
+      {/* BENEFITS SECTION - Diaspora Focus */}
       <section className="py-24 bg-white">
         <div className="container px-4 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             {/* Left Content */}
             <div>
-              <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
-                <Star className="w-3 h-3 mr-2 text-yellow-500 fill-yellow-500" />
-                Why Choose Us
+              <div className="inline-flex items-center px-3 py-1 bg-gradient-to-r from-blue-50 to-green-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-blue-200">
+                <Award className="w-3 h-3 mr-2 text-orange-500" />
+                The BlueVision Advantage
               </div>
               
               <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Experience the
-                <span className="block text-blue-600">BlueVision Advantage</span>
+                Why Diaspora Investors
+                <span className="block text-blue-600">Choose BlueVision</span>
               </h2>
               
               <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-                Our comprehensive approach and attention to detail set us apart from other 
-                real estate agencies in Nairobi.
+                We've built our reputation on making Kenyan land investment accessible, 
+                secure, and profitable for clients living abroad.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-start group">
-                    <div className="p-3 bg-blue-50 rounded-xl text-blue-600 mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                  <div key={index} className="flex items-start group hover:bg-gradient-to-br hover:from-blue-50 hover:to-white rounded-xl p-3 transition-all duration-300">
+                    <div className={`p-3 rounded-xl text-blue-600 mr-4 group-hover:scale-110 transition-transform duration-300 ${index === 1 ? 'bg-green-50 group-hover:bg-green-100' : 'bg-blue-50 group-hover:bg-blue-100'}`}>
                       {benefit.icon}
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 mb-2">{benefit.title}</h3>
+                      <h3 className="font-bold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">
+                        {benefit.title}
+                      </h3>
                       <p className="text-gray-600 text-sm">{benefit.description}</p>
                     </div>
                   </div>
@@ -333,10 +376,15 @@ const ServicesPage = () => {
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-3xl p-10 shadow-2xl">
                 <div className="mb-8">
-                  <h3 className="text-3xl font-bold mb-4">Get a Free Consultation</h3>
+                  <div className="inline-flex items-center px-3 py-1 bg-white/20 rounded-full text-sm font-semibold mb-4">
+                    <Globe className="w-4 h-4 mr-2" />
+                    Diaspora Exclusive
+                  </div>
+                  
+                  <h3 className="text-3xl font-bold mb-4">Free Land Investment Consultation</h3>
                   <p className="text-blue-100 mb-6 text-lg">
-                    Schedule a 30-minute consultation with one of our experts to discuss your needs 
-                    and learn how we can help you achieve your real estate goals.
+                    Schedule a 45-minute video consultation with our diaspora land specialists.
+                    Get personalized advice on secure land investment in Kenya.
                   </p>
                   
                   <div className="space-y-4 mb-8">
@@ -346,70 +394,81 @@ const ServicesPage = () => {
                     </div>
                     <div className="flex items-center">
                       <CheckCircle className="w-5 h-5 text-green-300 mr-3 flex-shrink-0" />
-                      <span>Personalized recommendations</span>
+                      <span>Initial land verification report</span>
                     </div>
                     <div className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-300 mr-3 flex-shrink-0" />
-                      <span>Customized action plan</span>
+                      <CheckCircle className="w-5 h-5 text-orange-300 mr-3 flex-shrink-0" />
+                      <span>Customized investment strategy</span>
                     </div>
                   </div>
                 </div>
                 
                 <div className="space-y-4">
                   <a
-                    href="/contact"
-                    className="block w-full py-4 bg-white text-blue-900 hover:bg-blue-50 font-bold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
+                    href="/diaspora-consultation"
+                    className="block w-full py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-center rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg group"
                   >
-                    Book Free Consultation
+                    <span className="flex items-center justify-center">
+                      Book Free Video Consultation
+                      <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </span>
                   </a>
-                  <a
-                    href="tel:+254711387303"
-                    className="block w-full py-4 bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold text-center rounded-xl transition-all duration-300 text-lg flex items-center justify-center"
-                  >
-                    <Phone className="w-5 h-5 mr-2" />
-                    Call Now: +254 711-387-303
-                  </a>
+                  <div className="flex items-center justify-center text-blue-200 text-sm">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Or call: +254 711 387 303 (KE) | +44 7397 549590 (UK)
+                  </div>
                 </div>
               </div>
               
-              {/* Decorative Element */}
+              {/* Decorative Elements */}
               <div className="absolute -top-6 -right-6 w-48 h-48 bg-gradient-to-r from-blue-300 to-cyan-300 rounded-full blur-3xl opacity-20 -z-10"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-r from-orange-300 to-orange-200 rounded-full blur-3xl opacity-20 -z-10"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS PREVIEW */}
+      {/* TESTIMONIALS PREVIEW - Diaspora Focus */}
       <section className="py-24 bg-gradient-to-b from-white to-blue-50">
         <div className="container px-4 mx-auto max-w-7xl">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-blue-200">
+              <Users className="w-3 h-3 mr-2" />
+              Diaspora Success Stories
+            </div>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-              Trusted by Nairobi Property Owners
+              Trusted by Kenyans Worldwide
             </h2>
             <p className="text-gray-600 max-w-xl mx-auto text-lg">
-              See what our clients say about our premium real estate services
+              Hear from diaspora clients who've successfully invested in Kenyan land with our guidance
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'James Mwangi',
-                role: 'Property Investor',
-                content: 'BlueVision helped me build a profitable property portfolio. Their investment consultation service is exceptional.',
-                rating: 5
+                name: 'James Kariuki',
+                location: 'London, UK',
+                content: 'BlueVision handled my 2-acre plot purchase completely remotely. Their verification system gave me confidence to invest from abroad.',
+                rating: 5,
+                service: 'Land Acquisition',
+                accent: 'bg-green-100 text-green-800'
               },
               {
-                name: 'Fatima Ali',
-                role: 'Home Seller',
-                content: 'Sold my property 15% above market value in just 3 weeks. Their marketing strategy really works!',
-                rating: 5
+                name: 'Sarah Mwangi',
+                location: 'Dubai, UAE',
+                content: 'The development management service transformed my empty plot into a rental property while I was overseas. Monthly video updates were priceless.',
+                rating: 5,
+                service: 'Development Management',
+                accent: 'bg-blue-100 text-blue-800'
               },
               {
-                name: 'David Omondi',
-                role: 'First-time Buyer',
-                content: 'The property buying service made my first home purchase smooth and stress-free. Highly recommended!',
-                rating: 5
+                name: 'David Ochieng',
+                location: 'Nairobi, Local',
+                content: 'As a lawyer, I appreciate their thorough legal due diligence. They make complex land transactions simple for diaspora clients.',
+                rating: 5,
+                service: 'Legal Services',
+                accent: 'bg-orange-100 text-orange-800'
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
@@ -421,13 +480,18 @@ const ServicesPage = () => {
                 <p className="text-gray-700 mb-6 text-lg italic leading-relaxed">
                   "{testimonial.content}"
                 </p>
-                <div className="flex items-center pt-6 border-t border-gray-100">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
-                    {testimonial.name.charAt(0)}
+                <div className="pt-6 border-t border-gray-100">
+                  <div className="flex items-center mb-3">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg mr-4">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-bold text-gray-900">{testimonial.name}</div>
+                      <div className="text-sm text-gray-500">{testimonial.location}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-bold text-gray-900">{testimonial.name}</div>
-                    <div className="text-blue-600 font-medium">{testimonial.role}</div>
+                  <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold ${testimonial.accent}`}>
+                    {testimonial.service}
                   </div>
                 </div>
               </div>
@@ -436,11 +500,11 @@ const ServicesPage = () => {
           
           <div className="text-center mt-12">
             <a
-              href="/testimonials"
-              className="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition-colors text-lg"
+              href="/diaspora-success-stories"
+              className="inline-flex items-center text-blue-600 font-bold hover:text-blue-800 transition-colors text-lg group"
             >
-              Read More Success Stories
-              <ChevronRight className="w-5 h-5 ml-2" />
+              Read More Diaspora Stories
+              <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
@@ -450,123 +514,99 @@ const ServicesPage = () => {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
             className="w-full h-full object-cover"
-            alt="Nairobi skyline"
+            alt="Kenyan landscape"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-blue-800 to-green-900 mix-blend-multiply"></div>
         </div>
         
         <div className="container relative z-10 px-4 mx-auto max-w-4xl text-center">
+          <ShieldCheck className="w-16 h-16 text-green-300 mx-auto mb-6" />
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your Property Goals?
+            Start Your Secure Land Journey Today
           </h2>
-          <p className="text-xl text-blue-100 mb-10 font-light">
-            Contact us today to discuss your real estate needs and discover how our premium services can help you succeed.
+          <p className="text-xl text-blue-100 mb-10 font-light max-w-2xl mx-auto">
+            Join hundreds of diaspora families investing confidently in verified Kenyan land.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
-              href="/contact"
-              className="px-10 py-4 bg-white text-blue-900 hover:bg-blue-50 font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
+              href="/land-verification"
+              className="px-10 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg group"
             >
-              Contact Us Now
+              <span className="flex items-center justify-center">
+                Start Land Verification
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </span>
             </a>
             <a
               href="tel:+254711387303"
-              className="px-10 py-4 bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold rounded-xl backdrop-blur-sm transition-all duration-300 text-lg flex items-center justify-center"
+              className="px-10 py-4 bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold rounded-xl backdrop-blur-sm transition-all duration-300 text-lg flex items-center justify-center group"
             >
-              <Calendar className="w-5 h-5 mr-2" />
-              Schedule Call
+              <Phone className="w-5 h-5 mr-2 group-hover:text-orange-300 transition-colors" />
+              Call Diaspora Desk
             </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* FOOTER - Maintained from Home Page */}
       <footer className="bg-gray-900 text-white pt-20 pb-10 border-t border-gray-800">
         <div className="container px-4 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            {/* Brand */}
             <div>
               <div className="flex items-center space-x-3 mb-6">
-                <Logo size="md" variant="light" />
+                <Logo size="md" variant="dark" />
                 <div>
-                  
+                  <div className="text-xl font-bold">BlueVision Realtors</div>
+                  <div className="text-sm text-green-300 font-semibold">Land Acquisition Specialists</div>
                 </div>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                Nairobi's premier real estate agency offering premium services for buying, selling, and managing properties.
+                Kenya's trusted partner for diaspora land investment. 
+                Specializing in verified, scam-proof property acquisition with full transparency.
               </p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Our Services</h3>
-              <ul className="space-y-4">
-                {services.slice(0, 4).map((service) => (
-                  <li key={service.title}>
-                    <a 
-                      href={`/services/${service.title.toLowerCase().replace(/ /g, '-')}`}
-                      className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block"
-                    >
-                      {service.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Social Media Icons */}
+              
+              {/* Social Media */}
               <div className="flex space-x-4">
                 <a 
                   href="https://facebook.com/bluevisionrealtors" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-[#1877F2] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Follow us on Facebook"
-                  title="Follow us on Facebook"
                 >
                   <Facebook className="w-5 h-5 text-white" />
-                </a>
-                <a 
-                  href="https://twitter.com/bluevisionrealtors" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Follow us on Twitter/X"
-                  title="Follow us on Twitter/X"
-                >
-                  <Twitter className="w-5 h-5 text-white" />
                 </a>
                 <a 
                   href="https://wa.me/254711387303" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-[#25D366] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Chat with us on WhatsApp"
-                  title="Chat with us on WhatsApp"
                 >
                   <MessageCircle className="w-5 h-5 text-white" />
                 </a>
                 <a 
-                  href="https://tiktok.com/@bluevisionrealtors" 
+                  href="https://youtube.com/@bluevisionrealtors" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Follow us on TikTok"
-                  title="Follow us on TikTok"
+                  className="w-10 h-10 bg-gray-800 hover:bg-[#e21212] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                 >
-                  <Music2Icon className="w-5 h-5 text-white" />
+                  <Youtube className="w-5 h-5 text-white" />
                 </a>
               </div>
+            </div>
 
+            {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
+              <h3 className="text-lg font-bold mb-6 text-white flex items-center">
+                <ChevronRight className="w-4 h-4 mr-2 text-green-300" />
+                Quick Links
+              </h3>
               <ul className="space-y-4">
-                {['Home', 'About Us', 'Services', 'Listings', 'Agents', 'Contact'].map((item) => (
+                {['Verified Lands', 'Diaspora Process', 'Legal Services', 'Development Partners'].map((item) => (
                   <li key={item}>
-                    <a 
-                      href={`/${item === 'Home' ? '' : item.toLowerCase().replace(' ', '-')}`}
-                      className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block"
-                    >
+                    <a href={`/${item.toLowerCase().replace(/ /g, '-')}`} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
                       {item}
                     </a>
                   </li>
@@ -574,24 +614,50 @@ const ServicesPage = () => {
               </ul>
             </div>
 
+            {/* Land Services */}
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Get In Touch</h3>
+              <h3 className="text-lg font-bold mb-6 text-white flex items-center">
+                <LandPlot className="w-4 h-4 mr-2 text-orange-300" />
+                Land Services
+              </h3>
+              <ul className="space-y-4">
+                {['Plot Verification', 'Title Search', 'Boundary Survey', 'Development Planning'].map((item) => (
+                  <li key={item}>
+                    <a href="/services" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h3 className="text-lg font-bold mb-6 text-white flex items-center">
+                <Phone className="w-4 h-4 mr-2 text-orange-300" />
+                Contact Us
+              </h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <Phone className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                  <MapPin className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-400">Equity Bank Building, Kilimani<br/>Nairobi, Kenya</span>
+                </li>
+                <li className="flex items-center">
+                  <Phone className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                   <div>
-                    <div className="text-gray-400">+254 711-387-303</div>
-                    <div className="text-sm text-gray-500">Mon-Sat, 9AM-6PM</div>
+                    <a href="tel:+254711387303" className="text-gray-400 hover:text-white transition-colors block">
+                      +254 711 387 303 (KE)
+                    </a>
+                    <a href="tel:+447397549590" className="text-gray-400 hover:text-white transition-colors block text-sm">
+                      +44 7397 549590 (UK)
+                    </a>
                   </div>
                 </li>
-                <li className="flex items-start">
-                  <Calendar className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
-                  <div>
-                    <a href="/contact" className="text-gray-400 hover:text-white transition-colors">
-                      Book Consultation
-                    </a>
-                    <div className="text-sm text-gray-500">Free 30-min session</div>
-                  </div>
+                <li className="flex items-center">
+                  <Mail className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                  <a href="mailto:sales@bluevisionrealtors.com" className="text-gray-400 hover:text-white transition-colors">
+                    sales@bluevisionrealtors.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -599,7 +665,8 @@ const ServicesPage = () => {
 
           <div className="border-t border-gray-800 pt-8 text-center">
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} BlueVision Realtors Limited. All rights reserved.
+              &copy; {new Date().getFullYear()} BlueVision Realtors Limited. 
+              <span className="text-green-400 font-semibold ml-2">Verified Land Acquisition Specialists</span>
             </p>
           </div>
         </div>
