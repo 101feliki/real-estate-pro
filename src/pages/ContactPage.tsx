@@ -16,7 +16,9 @@ import {
   MessageCircle,
   Twitter,
   Star,
-  ChevronRight
+  ChevronRight,
+  LandPlot,
+  Youtube
 } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
@@ -519,70 +521,62 @@ const ContactPage = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-900 text-white pt-20 pb-10 border-t border-gray-800">
+     <footer className="bg-gray-900 text-white pt-20 pb-10 border-t border-gray-800">
         <div className="container px-4 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            {/* Brand */}
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <Logo size="md" variant="dark" />
                 <div>
-                  
+                  <div className="text-xl font-bold">BlueVision Realtors</div>
+                  <div className="text-sm text-green-300 font-semibold">Land Acquisition Specialists</div>
                 </div>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Your trusted partner for premium real estate services in Nairobi.
+              <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                Kenya's trusted partner for diaspora land investment. 
+                Specializing in verified, scam-proof property acquisition with full transparency.
               </p>
-            </div>
-            {/* Social Media Icons */}
+              
+              {/* Social Media */}
               <div className="flex space-x-4">
                 <a 
                   href="https://facebook.com/bluevisionrealtors" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-[#1877F2] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Follow us on Facebook"
-                  title="Follow us on Facebook"
                 >
                   <Facebook className="w-5 h-5 text-white" />
-                </a>
-                <a 
-                  href="https://twitter.com/bluevisionrealtors" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Follow us on Twitter/X"
-                  title="Follow us on Twitter/X"
-                >
-                  <Twitter className="w-5 h-5 text-white" />
                 </a>
                 <a 
                   href="https://wa.me/254711387303" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-gray-800 hover:bg-[#25D366] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Chat with us on WhatsApp"
-                  title="Chat with us on WhatsApp"
                 >
                   <MessageCircle className="w-5 h-5 text-white" />
                 </a>
                 <a 
-                  href="https://tiktok.com/@bluevisionrealtors" 
+                  href="https://youtube.com/@bluevisionrealtors" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 hover:bg-black rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-                  aria-label="Follow us on TikTok"
-                  title="Follow us on TikTok"
+                  className="w-10 h-10 bg-gray-800 hover:bg-[#e21212] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                 >
-                  <Music2Icon className="w-5 h-5 text-white" />
+                  <Youtube className="w-5 h-5 text-white" />
                 </a>
               </div>
+            </div>
 
+            {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Quick Links</h3>
+              <h3 className="text-lg font-bold mb-6 text-white flex items-center">
+                <ChevronRight className="w-4 h-4 mr-2 text-green-300" />
+                Quick Links
+              </h3>
               <ul className="space-y-4">
-                {['Home', 'About Us', 'Services', 'Listings',  'Contact'].map((item) => (
+                {['Verified Lands', 'Diaspora Process', 'Legal Services', 'Development Partners'].map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <a href={`/${item.toLowerCase().replace(/ /g, '-')}`} className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
                       {item}
                     </a>
                   </li>
@@ -590,12 +584,16 @@ const ContactPage = () => {
               </ul>
             </div>
 
+            {/* Land Services */}
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Services</h3>
+              <h3 className="text-lg font-bold mb-6 text-white flex items-center">
+                <LandPlot className="w-4 h-4 mr-2 text-green-300" />
+                Land Services
+              </h3>
               <ul className="space-y-4">
-                {['Property Buying', 'Property Selling', 'Property Management', 'Investment Consultation'].map((item) => (
+                {['Plot Verification', 'Title Search', 'Boundary Survey', 'Development Planning'].map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="/services" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all inline-block">
                       {item}
                     </a>
                   </li>
@@ -603,20 +601,33 @@ const ContactPage = () => {
               </ul>
             </div>
 
+            {/* Contact */}
             <div>
-              <h3 className="text-lg font-bold mb-6 text-white">Contact Us</h3>
+              <h3 className="text-lg font-bold mb-6 text-white flex items-center">
+                <Phone className="w-4 h-4 mr-2 text-green-300" />
+                Contact Us
+              </h3>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <MapPin className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-400">Equity Bank Building, 1st Floor,<br/>Kilimani, Nairobi</span>
+                  <MapPin className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-gray-400">Equity Bank Building, Kilimani<br/>Nairobi, Kenya</span>
                 </li>
                 <li className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-400">+254 711-387-303</span>
+                  <Phone className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                  <div>
+                    <a href="tel:+254711387303" className="text-gray-400 hover:text-white transition-colors block">
+                      +254 711 387 303 (KE)
+                    </a>
+                    <a href="tel:+447397549590" className="text-gray-400 hover:text-white transition-colors block text-sm">
+                      +44 7397 549590 (UK)
+                    </a>
+                  </div>
                 </li>
                 <li className="flex items-center">
-                  <Mail className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-400">info.bluevisionrealtors@gmail.com</span>
+                  <Mail className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
+                  <a href="mailto:sales@bluevisionrealtors.com" className="text-gray-400 hover:text-white transition-colors">
+                    sales@bluevisionrealtors.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -624,7 +635,8 @@ const ContactPage = () => {
 
           <div className="border-t border-gray-800 pt-8 text-center">
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} BlueVision Realtors Limited. All rights reserved.
+              &copy; {new Date().getFullYear()} BlueVision Realtors Limited. 
+              <span className="text-green-400 font-semibold ml-2">Verified Land Acquisition Specialists</span>
             </p>
           </div>
         </div>
