@@ -393,7 +393,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA Section - Land Verification Focus */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-green-900 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-800 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10" 
              style={{ 
