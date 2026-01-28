@@ -49,7 +49,7 @@ const HomePage = () => {
       content: 'BlueVision handled my 2-acre plot purchase in Kitengela while I was overseas. Their monthly site visit videos gave me complete peace of mind.',
       type: 'Land Purchase',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop',
+      
       accent: 'bg-green-100 text-green-800'
     },
     {
@@ -58,7 +58,7 @@ const HomePage = () => {
       content: 'From verifying titles to handing over keys, they made investing in Kenyan land from abroad completely stress-free.',
       type: 'Plot Development',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop',
+      
       accent: 'bg-blue-100 text-blue-800'
     },
     {
@@ -67,7 +67,7 @@ const HomePage = () => {
       content: 'Their transparent process and regular updates made me confident to recommend them to family abroad.',
       type: 'Property Management',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop',
+      
       accent: 'bg-green-100 text-green-800'
     }
   ];
@@ -123,13 +123,7 @@ const HomePage = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/lands"
-                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center text-base group"
-              >
-                Explore Verified Plots 
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              
               <a
                 href="/consultation"
                 className="px-8 py-4 bg-transparent border-2 border-white/40 hover:border-green-400 hover:bg-white/10 text-white font-bold rounded-xl backdrop-blur-sm transition-all duration-300 text-base group"
@@ -300,11 +294,7 @@ const HomePage = () => {
                 
                 <div className="pt-6 border-t border-gray-100">
                   <div className="flex items-center mb-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover mr-4 ring-2 ring-blue-100"
-                    />
+                    
                     <div>
                       <div className="font-bold text-gray-900">{testimonial.name}</div>
                       <div className="text-sm text-gray-500">{testimonial.location}</div>
@@ -340,15 +330,7 @@ const HomePage = () => {
             Get a free land verification report and consultation. No obligation, just transparency.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/land-verification"
-              className="px-10 py-4 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg group"
-            >
-              <span className="flex items-center justify-center">
-                Get Free Verification Report
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </a>
+           
             <a
               href="tel:+254711387303"
               className="px-10 py-4 bg-blue-700/50 border border-blue-400/30 hover:bg-blue-700 hover:border-blue-400 text-white font-bold rounded-xl backdrop-blur-sm transition-all duration-300 text-lg flex items-center justify-center group"
