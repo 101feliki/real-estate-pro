@@ -468,8 +468,8 @@ const HomePage = () => {
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                  <a href="mailto:sales@bluevisionrealtors.com" className="text-gray-400 hover:text-white transition-colors">
-                    sales@bluevisionrealtors.com
+                  <a href="mailto:info@bluevisionrealtors@gmail.com" className="text-gray-400 hover:text-white transition-colors">
+                    info@bluevisionrealtors@gmail.com
                   </a>
                 </li>
               </ul>
