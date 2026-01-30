@@ -354,7 +354,7 @@ const ListingsPage = () => {
                   and legal due diligence. Your investment is protected.
                 </p>
               </div>
-              <a href="/verification-process" className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center">
+              <a href="/Contact" className="text-blue-600 hover:text-blue-800 font-semibold text-sm flex items-center">
                 Learn More <ArrowRight className="w-4 h-4 ml-1" />
               </a>
             </div>
