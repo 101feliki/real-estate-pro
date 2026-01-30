@@ -521,15 +521,7 @@ const ServicesPage = () => {
             Join hundreds of diaspora families investing confidently in verified Kenyan land.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a
-              href="/land-verification"
-              className="px-10 py-4 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-lg group"
-            >
-              <span className="flex items-center justify-center">
-                Start Land Verification
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </a>
+            
             <a
               href="tel:+254711387303"
               className="px-10 py-4 bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold rounded-xl backdrop-blur-sm transition-all duration-300 text-lg flex items-center justify-center group"
